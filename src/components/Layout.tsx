@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Lenis from 'lenis';
 import { CustomCursor } from './CustomCursor';
 import { Preloader } from './Preloader';
@@ -8,6 +8,25 @@ import { useLocation, Link } from 'react-router-dom';
 
 export const Layout = ({ children }: { children: React.ReactNode }) => {
   const { pathname } = useLocation();
+  const [time, setTime] = useState('');
+
+  useEffect(() => {
+    const updateTime = () => {
+      const now = new Date();
+      const timeString = now.toLocaleTimeString('en-ZA', {
+        timeZone: 'Africa/Johannesburg',
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: true
+      });
+      setTime(timeString);
+    };
+
+    updateTime(); // run immediately on mount
+    const interval = setInterval(updateTime, 1000); // update every second
+
+    return () => clearInterval(interval); // cleanup on unmount
+  }, []);
 
   useEffect(() => {
     const lenis = new Lenis({
@@ -49,7 +68,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
       <footer className="px-10 py-20 border-t border-black/10 flex flex-col md:flex-row items-start justify-between gap-10">
         <div className="max-w-md">
           <h4 className="text-4xl font-bold tracking-tighter uppercase mb-6">Let's Kreate Together.</h4>
-          <a href="mailto:hello@neothekreator.com" className="text-lg opacity-50 hover:opacity-100 transition-opacity underline underline-offset-8">
+          <a href="mailto:neothekreator@gmail.com" className="text-lg opacity-50 hover:opacity-100 transition-opacity underline underline-offset-8">
             neothekreator@gmail.com
           </a>
         </div>
@@ -74,7 +93,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
         
         <div className="text-right">
           <span className="text-[10px] font-medium tracking-widest uppercase opacity-30 block mb-2">Local Time</span>
-          <span className="text-xs uppercase tracking-widest">Johannesburg, RSA — 11:05 AM</span>
+          <span className="text-xs uppercase tracking-widest">Johannesburg, RSA — {time}</span>
         </div>
       </footer>
     </>
