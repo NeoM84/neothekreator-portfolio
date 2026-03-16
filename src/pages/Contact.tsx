@@ -19,7 +19,7 @@ export const Contact = () => {
     try {
       await emailjs.send(
         'service_qaq4lr9',    // 🔁 Replace with your EmailJS Service ID
-        'dpw88gu',   // 🔁 Replace with your EmailJS Template ID
+        'template_dpw88gu',   // 🔁 Replace with your EmailJS Template ID
         {
           from_name: formData.name,
           from_email: formData.email,
