@@ -130,7 +130,7 @@ export const DevWorks: DevWork[] = [
     id: "jobtracker",
     title: "Job Tracker App",
     category: "Full Stack App",
-    githubUrl: "https://github.com/NeoM84/freecodecampCalorieCounter",
+    githubUrl: "https://github.com/NeoM84/jobtracker",
     image: "/Job Tracker App.png"
   },
   {
