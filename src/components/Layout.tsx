@@ -22,10 +22,10 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
       setTime(timeString);
     };
 
-    updateTime(); // run immediately on mount
-    const interval = setInterval(updateTime, 1000); // update every second
+    updateTime(); 
+    const interval = setInterval(updateTime, 1000); 
 
-    return () => clearInterval(interval); // cleanup on unmount
+    return () => clearInterval(interval); 
   }, []);
 
   useEffect(() => {
