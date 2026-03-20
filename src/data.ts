@@ -17,7 +17,7 @@ export const projects: Project[] = [
     category: "Brand Identity",
     year: "2022",
     description: "Tatso Tsa Africa is a street food brand based in Kimberley, South Africa. The goal of this project was to create a bold and recognisable brand identity that reflects African flavour while standing out in busy street environments where visibility and quick recognition are essential..",
-    thumbnail: "/Tatso Logo With Background.png",
+    thumbnail: "/Tatso Tsa Afrika Cover Pic(34).png",
     images: [
       "/Tatso Logo With Background.png",
       "/Tatso Main Logo.png",
@@ -33,7 +33,7 @@ export const projects: Project[] = [
     category: "Brand Identity",
     year: "2020",
     description: "Bait By Jubilee is a fashion brand positioned in the high-fashion and lifestyle space, based in Kimberley and Johannesburg. The objective of this project was to create a visual identity that feels premium, stylish, and contemporary while remaining versatile across digital and physical brand touchpoints.",
-    thumbnail: "/Bait Logo With Background.png",
+    thumbnail: "/Bait Cover Pic(34).png",
     images: [
       "/Bait Logo With Background.png",
       "/Bait Main Logo.png",
@@ -49,7 +49,7 @@ export const projects: Project[] = [
     category: "Brand Identity",
     year: "2019",
     description: "Shawn Woodman's Carpentry is a craft-focused carpentry business based in Kimberley, South Africa. The aim of this project was to create a visual identity that reflects craftsmanship, reliability, and quality while appealing to both residential and commercial clients.",
-    thumbnail: "/Shawn Woodmans Logo With Background.png",
+    thumbnail: "/Shawn Woodman Cover Pic(34).png",
     images: [
       "/Shawn Woodmans Logo With Background.png",
       "/Shawn Woodman Main Logo.png",
@@ -65,7 +65,7 @@ export const projects: Project[] = [
     category: "Web Design",
     year: "2023",
     description: "Kuishi Creatives required a modern and professional website design to present its creative services online. The project focused on creating a clean and responsive website that highlights the studio's work while maintaining strong usability and visual clarity..",
-    thumbnail: "/Kuishi Mid-Fi Landing Page.png",
+    thumbnail: "/Kuishi Cover Pic(34).png",
     images: [
       "/Kuishi Mid-Fi Landing Page.png",
     ]
@@ -77,7 +77,7 @@ export const projects: Project[] = [
     category: "Web Design",
     year: "2024",
     description: "The Mongale Wedding Website was designed as a modern digital invitation platform for guests. The project focused on creating a simple, elegant website where guests could easily access event details, location information, and RSVP functionality.",
-    thumbnail: "/Mongale Wedding Website.png",
+    thumbnail: "/Mongale Wedding Cover Pic(34).png",
     images: [
       "/Mongale Wedding Website.png",
     ]
@@ -89,14 +89,14 @@ export const projects: Project[] = [
     category: "Graphic Design",
     year: "2024",
     description: "A set of marketing flyers designed to promote NKP Energy's renewable energy solutions. The layouts focus on clear communication, structured information, and strong brand consistency across print and digital materials.",
-    thumbnail: "/NKP Flyer Projects.png",
+    thumbnail: "/NKP Cover Pic(34).png",
     images: [
-      "/NKP Flyer Projects.png",
+     "/NKP Flyer Projects.png",
     ]
   }
 ];
 
-export interface OtherWork {
+export interface DevWork {
   id: string;
   title: string;
   category: string;
@@ -104,33 +104,40 @@ export interface OtherWork {
   image: string;
 }
 
-export const otherWorks: OtherWork[] = [
+export const DevWorks: DevWork[] = [
   {
-    id: "ow1",
-    title: "GLSL SHADER LAB",
-    category: "Creative Coding",
-    githubUrl: "https://github.com/neothekreator/shader-lab",
-    image: "https://picsum.photos/seed/shader/800/600"
+    id: "ThaboMongale",
+    title: "Thabo Mongale Portfolio",
+    category: "Portfolio Coding",
+    githubUrl: "https://github.com/NeoM84/thabomongale-portfolio",
+    image: "/Thabo Mongale Portfolio.png"
   },
   {
-    id: "ow2",
-    title: "REACT MOTION UI",
-    category: "Library / Tools",
-    githubUrl: "https://github.com/neothekreator/react-motion-ui",
-    image: "https://picsum.photos/seed/motion/800/600"
+    id: "csscatpainting",
+    title: "CSS Cat Painting",
+    category: "CSS Learning",
+    githubUrl: "https://github.com/NeoM84/cat-css-painting",
+    image: "/CSS Cat Painting.png"
   },
   {
-    id: "ow3",
-    title: "BRUTALIST CMS",
-    category: "Fullstack / App",
-    githubUrl: "https://github.com/neothekreator/brutalist-cms",
-    image: "https://picsum.photos/seed/cms/800/600"
+    id: "caloriecounter",
+    title: "Calorie Counter",
+    category: "Java Learning",
+    githubUrl: "https://github.com/NeoM84/freecodecampCalorieCounter",
+    image: "/Calorie Counter.png"
   },
   {
-    id: "ow4",
-    title: "AI ART GENERATOR",
-    category: "Machine Learning",
-    githubUrl: "https://github.com/neothekreator/ai-art",
-    image: "https://picsum.photos/seed/ai/800/600"
+    id: "jobtracker",
+    title: "Job Tracker App",
+    category: "Full Stack App",
+    githubUrl: "https://github.com/NeoM84/freecodecampCalorieCounter",
+    image: "/Job Tracker App.png"
+  },
+  {
+    id: "rentalrate",
+    title: "Rental Rate Vibe Coding",
+    category: "Ai Vibe Coding",
+    githubUrl: "https://github.com/NeoM84/Vibe-Project-Rental-Rate",
+    image: "/Rental Rate Vibe Coding.png"
   }
 ];
