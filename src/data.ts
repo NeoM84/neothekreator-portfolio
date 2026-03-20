@@ -95,3 +95,42 @@ export const projects: Project[] = [
     ]
   }
 ];
+
+export interface OtherWork {
+  id: string;
+  title: string;
+  category: string;
+  githubUrl: string;
+  image: string;
+}
+
+export const otherWorks: OtherWork[] = [
+  {
+    id: "ow1",
+    title: "GLSL SHADER LAB",
+    category: "Creative Coding",
+    githubUrl: "https://github.com/neothekreator/shader-lab",
+    image: "https://picsum.photos/seed/shader/800/600"
+  },
+  {
+    id: "ow2",
+    title: "REACT MOTION UI",
+    category: "Library / Tools",
+    githubUrl: "https://github.com/neothekreator/react-motion-ui",
+    image: "https://picsum.photos/seed/motion/800/600"
+  },
+  {
+    id: "ow3",
+    title: "BRUTALIST CMS",
+    category: "Fullstack / App",
+    githubUrl: "https://github.com/neothekreator/brutalist-cms",
+    image: "https://picsum.photos/seed/cms/800/600"
+  },
+  {
+    id: "ow4",
+    title: "AI ART GENERATOR",
+    category: "Machine Learning",
+    githubUrl: "https://github.com/neothekreator/ai-art",
+    image: "https://picsum.photos/seed/ai/800/600"
+  }
+];

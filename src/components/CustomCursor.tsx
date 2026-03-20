@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion, useSpring, useMotionValue } from 'motion/react';
 import { cn } from '@/src/utils/cn';
 
@@ -44,8 +44,8 @@ export const CustomCursor = () => {
   return (
     <motion.div
       className={cn(
-        "fixed top-0 left-0 w-4 h-4 bg-white rounded-full pointer-events-none z-9999 flex items-center justify-center mix-blend-difference",
-        isHovering && "w-20 h-20 mix-blend-normal bg-white text-black"
+        "fixed top-0 left-0 w-4 h-4 bg-black rounded-full pointer-events-none z-[9999] flex items-center justify-center",
+        isHovering && "w-20 h-20 bg-black text-white"
       )}
       style={{
         x: cursorX,
