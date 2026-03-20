@@ -5,6 +5,7 @@ import { ProjectCard } from '@/src/components/ProjectCard';
 import { DevWorkSlider } from '@/src/components/DevWorkSlider';
 import { Link } from 'react-router-dom';
 
+
 export const Home = () => {
   return (
     <div className="pt-28 md:pt-40">
@@ -42,7 +43,6 @@ export const Home = () => {
         </div>
       </section>
 
-      {/* Brand / Design Work Grid */}
       <section className="grid grid-cols-1 md:grid-cols-2 border-t border-black/10">
         {projects.map((project, index) => (
           /* @ts-ignore */
@@ -50,10 +50,6 @@ export const Home = () => {
         ))}
       </section>
 
-      {/* Dev Work Slider */}
-      <DevWorkSlider />
-
-      {/* CTA Section */}
       <section className="px-4 md:px-10 py-20 md:py-40 text-center border-t border-black/10">
         <motion.h2
           initial={{ opacity: 0, y: 50 }}
